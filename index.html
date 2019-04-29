@@ -11,77 +11,223 @@
 
   <header>
 
-      <img src="bon logo.png" alt="logo grosland">
+      <img src="bon logo.png" alt="logo groland">
         
       <h1>
-            DEMANDE D'ASILE GROSLAND
+            DEMANDE D'ASILE GROLAND
        </h1>
 
        <p>
-         complétez les informations demandées pour la demande d'asile de la présipotée de GROSLAND
+         complétez les informations demandées pour la demande d'asile de la présipotée de GROLAND
        </p>
 
     </header> 
 
     <main>
 
-    <form>
+    
             <fieldset>
+
+                  <form>
+
               <legend>Identité</legend>
-          
+
               <input type="radio" id="Homme" name="genre">
               <label for="Homme">Homme</label><br/>
-          
+              
+              
               <input type="radio" id="Femme" name="genre">
               <label for="Femme">Femme</label><br/>
+              
+              
           
-              
-              
               <input type="radio" id="Autres Précisez" name="genre">
               <label for="Autres Précisez">Autres Précisez </label><br/>
-              <input type="text" name="Autres Précisez"/>
+             <input type="text" name="Autres Précisez"/>
+              
+                       
               
               
-               <input type="text" name="Nom" methode="get"/>
-               <label for="Nom">Nom</label><br/>
+            <p> 
+                <label for="Nom">Nom</label><br/>
+                <input type="text" name="Nom" methode="get"/>
+            </p> 
                 
-             
-
-              <input type="text" name="Prénoms"/>
+            <p>
               <label for="Prénoms">Prénoms</label><br/>
+              <input type="text" name="Prénoms" methode="get"/>
+            </p>  
 
+            <p>
+              <label for="Date de naissance">Date de naissance</label><br/>
               <input type="text" name="Date de naissance" methode="get"/>
-               <label for="Date de naissance">Date de naissance</label><br/>
-
-               <input type="text" name="Ville" methode="get"/>
-               <label for="Ville">Ville</label><br/>
-
-               <input type="text" name="Pays" methode="get"/>
-               <label for="Pays">Pays</label><br/>
-
-               <fieldset>
-                  <legend>Caractéristiques</legend>
-
-                  <input type="text" name="Couleur des yeux" methode="get"/>
-               <label for="Couleur des yeux">Couleur des yeux</label><br/>
-
-               <input type="text" name="Taille" methode="get"/>
-               <label for="Taille">Taille</label><br/>
-
-               <input type="text" name="Forme des oreilles" methode="get"/>
-               <label for="Forme des oreilles">Forme des oreilles</label><br/>
-
-               <input type="text" name="Mensurations" methode="get"/>
-               <label for="Mensurations">Mensurations</label><br/>
-
+            </p> 
+            
+            <p>
+                <label for="Ville">Ville</label><br/>
+                <input type="text" name="Ville" methode="get"/>
+            </p>   
                
+              
+                                      
+              <p>
+                      <label for="pays">Pays</label><br />
+                
+
+                      <select name="pays" id="pays">
+                      <option value="france">France</option>
+                      <option value="espagne">Espagne</option>
+                      <option value="italie">Italie</option>
+                      <option value="royaume-uni">Royaume-Uni</option>
+                      <option value="Allemagne">Allemagne</option>
+                      <option value="Belgique">Belgique</option>
+                      <option value="Luxembourg">Luxembourg</option>
+                      <option value="Pays-bas">Pays-bas</option>
+                      <option value="Danemark">Danemark</option>
+                      <option value="Irlande">Irlande</option>
+                      <option value="Grèce">Grèce</option>
+                      <option value="Portugal">Portugal</option>
+
+                  </select>
+                </p>
+              </form>
+          </fieldset>
+         
+
+         
+            <fieldset>
+               <form>  
+                 <legend>Caractéristiques</legend>
+
+                
+                <p>
+                    <label for="Couleur des yeux">Couleur des yeux</label><br/>
+                    <select name="Couleur des yeux" id="Couleur des yeux">
+                        <option value="Marron">Marron</option>
+                        <option value="Bleu">Bleu</option>
+                        <option value="vert">vert</option>
+                       
+                    </select>
+                </p>
+              
 
              
-           
-            </fieldset>
-          </form>
-        </main>  
+    <p>
+            <label for="Taille">Taille</label><br/>
+             <input type="text" name="Taille" methode="get"/>
+    </p>       
 
+             <input type="text" name="Forme des oreilles" methode="get"/>
+            
+             
+          <p>
+                <label for="Forme des oreilles">Forme des oreilles</label><br />
+                <select name="Forme des oreilles" id="Forme des oreilles">
+                    <option value="Petites">Petites</option>
+                    <option value="Moyennes">Moyennes</option>
+                    <option value="Grandes">Grandes</option>
+                   
+                </select>
+            </p>
+
+              <label for="Mensurations">Mensurations</label><br/>
+             <input type="text" name="Mensurations" methode="get"/>
+          
+            </form>
+                          
+             </fieldset>
+
+           
+              
+          
+            <fieldset>
+            <form>
+                  <legend>Coordonées</legend>
+
+        <h3>Adresse Actuelle</h3>
+              <p>
+                  <label for="N°">N°</label><br/>
+                  <input type="text" name="N°" methode="get"/>  
+              </p>
+
+              <p>
+                  <label for="Nom de la voie">Nom de la voie</label><br/>
+                  <input type="text" name="Nom de la voie" methode="get"/>
+              </p>
+
+            
+              <p>
+                  <label for="Complement d'adresse">Complement d'adresse</label><br/>
+                  <input type="text" name="Complement d'adresse" methode="get"/>
+              </p>
+               
+              <p>
+                  <label for="Code Postal">Code Postal</label><br/>
+                  <input type="text" name="Code Postal" methode="get"/>
+              </p>
+
+              <p>
+                  <label for="Ville">Ville</label><br/>
+                  <input type="text" name="Ville" methode="get"/>
+              </p>
+
+                                      
+              <p>
+                  <label for="pays">Pays</label><br />
+            
+
+                  <select name="pays" id="pays">
+                  <option value="france">France</option>
+                  <option value="espagne">Espagne</option>
+                  <option value="italie">Italie</option>
+                  <option value="royaume-uni">Royaume-Uni</option>
+                  <option value="Allemagne">Allemagne</option>
+                  <option value="Belgique">Belgique</option>
+                  <option value="Luxembourg">Luxembourg</option>
+                  <option value="Pays-bas">Pays-bas</option>
+                  <option value="Danemark">Danemark</option>
+                  <option value="Irlande">Irlande</option>
+                  <option value="Grèce">Grèce</option>
+                  <option value="Portugal">Portugal</option>
+
+              </select>
+            </p>
+
+            <p>
+                <label for="Tel">Tel</label><br/>
+                <input type="tel" name="Tel" methode="get"/>
+            </p>
+
+            <p>
+                <label for="email">email</label><br/>
+                <input type="email" name="email" methode="get"/>
+            </p>
+
+            </form>
+               
+              </fieldset>
+
+                           
+      </main> 
+      <footer>
+      
+      <fieldset>
+
+        <form>
+
+            <p>
+                <label for="newsletter">newsletter</label><br/>
+                <input type="checkbox" name="newsletter" methode="get"/>
+            </p>
+
+        <p>
+            <input type="submit" value="Envoyer" />
+        </p> 
+
+      </form>
+
+      </fieldset>
     
+    </footer>
 </body>
 </html>
